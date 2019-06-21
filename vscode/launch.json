@@ -1,0 +1,9 @@
+{
+    "configurations": [{
+        "name": "Xdebug",
+        "type": "php",
+        "request": "launch",
+        "port": 9000,
+        "preLaunchTask": "Open browser"
+    }]
+}
