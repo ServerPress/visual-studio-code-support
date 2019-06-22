@@ -13,15 +13,8 @@ if ( $ds_runtime->last_ui_event !== false ) {
 		if ( isset( $ds_runtime->preferences->sites->{$siteName} ) ) {
 			$sitePath = $ds_runtime->preferences->sites->{$siteName}->sitePath;
 
-			// TODO: create .vscode folder if it does not already exists
-			
-			// TODO: create/replace ds.code-workspace
-			// TODO: create/replace launch.json
-			// TODO: create/replace tasks.json
-			// TODO: create/replace xdebug.html
-			
-			// Update {{sitePath}} in ds.code-workspace
-			// Update {{siteName}} in tasks.json
+			// TODO: invoke create_vsc_workspace in vsc-support.php
+
 		}
 	}
 }

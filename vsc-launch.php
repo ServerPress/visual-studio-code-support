@@ -11,6 +11,9 @@ if ( ! empty( $_REQUEST['domain'] ) ) {
  * @param $vsc The current working directory.
  */
 function vsc_launch( $vsc ) {
+
+	// TODO: check if workspace exists, if not, create it
+
 	global $ds_runtime;
 	if ( PHP_OS !== 'Darwin' ){
 		// Windows
