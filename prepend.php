@@ -32,3 +32,18 @@ function vsc_domain_button_group_after( $domain )
 {
 	echo '<a href="http://localhost/ds-plugins/visual-studio-code-support/vsc-launch.php" data-domain="', $domain, '" style="background-color: #575297;border-color:#575297" class="btn btn-info dds-action vsc">VS Code</a>';
 }
+$ds_runtime->add_action( 'ds_footer', 'vsc_localhost_scripts' );
+function vsc_localhost_scripts() {
+	?>
+	<script>
+		(function($){
+			$('.dev-sites .btn-group .vsc').on('click', function(e) {
+				e.preventDefault();
+				$.post($(this).attr('href'), {
+					domain: $(this).data('domain')
+				});
+			});
+		})(jQuery);
+	</script>
+	<?php
+}
