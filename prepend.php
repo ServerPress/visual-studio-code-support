@@ -30,5 +30,5 @@ if ( $ds_runtime->last_ui_event !== false ) {
 $ds_runtime->add_action( 'domain_button_group_after', 'vsc_domain_button_group_after', 90 );
 function vsc_domain_button_group_after( $domain )
 {
-	echo '<a href="http://localhost/ds-plugins/visual-studio-code-support/vsc-launch.php" data-domain="', $domain, '" class="btn btn-info dds-action vsc">Visual Studio Code</a>';
+	echo '<a href="http://localhost/ds-plugins/visual-studio-code-support/vsc-launch.php" data-domain="', $domain, '" style="background-color: #575297;border-color:#575297" class="btn btn-info dds-action vsc">VS Code</a>';
 }
