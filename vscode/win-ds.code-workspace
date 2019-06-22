@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "{{sitePath}}"
+		}
+	],
+	"settings": {
+		"terminal.integrated.env.windows": {
+			"DS_PLATFORM": "Windows",
+			"DS_CLI": "c:\\xampplite\\ds-plugins\\ds-cli",
+			"PHPRC":"c:\\xampplite\\ds-plugins\\ds-cli\\platform\\win32\\pre",
+			"npm_config_cache":"c:\\xampplite\\ds-plugins\\ds-cli\\platform\\win32\\npm-cache",
+			"npm_config_prefix":"c:\\xampplite\\ds-plugins\\ds-cli\\platform\\win32\\npm",
+			"COMPOSER_HOME":"c:\\xampplite\\ds-plugins\\ds-cli\\platform\\win32\\composer",
+			"CYGWIN_HOME":"c:\\xampplite\\ds-plugins\\ds-cli\\platform\\win32\\cygwin",
+			"HOME":"${env:USERPROFILE}",
+			"PATH":"c:\\xampplite\\ds-plugins\\ds-cli\\platform\\all\\pre;c:\\xampplite\\ds-plugins\\ds-cli\\platform\\win32\\pre;c:\\xampplite\\ds-plugins\\ds-cli\\platform\\win32\\cygwin\\bin;c:\\xampplite\\ds-plugins\\ds-cli\\platform\\win32\\nodejs;c:\\xampplite\\ds-plugins\\ds-cli\\platform\\win32\\npm;c:\\xampplite\\php;c:\\xampplite\\mysql\\bin;c:\\xampplite\\perl\\bin;c:\\xampplite\\apache\\bin;c:\\xampplite\\other;c:\\xampplite\\ds-plugins\\ds-cli\\platform\\all\\wp-cli\\bin;${env:PATH}"
+		},
+		"terminal.integrated.shell.windows": "c:\\xampplite\\ds-plugins\\ds-cli\\platform\\win32\\cygwin\\bin\\bash.exe",
+		"terminal.integrated.rightClickBehavior": "default"
+	}
+}
