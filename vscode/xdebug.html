@@ -2,7 +2,8 @@
     <head>
         <script>
             setTimeout(function(){
-                window.location = "../?XDEBUG_SESSION_START";
+                document.cookie='XDEBUG_SESSION='+'DESKTOPSERVER'+';path=/;';
+                window.location = "../";
             }, 1000);
         </script>
     </head>
