@@ -17,7 +17,7 @@ function vsc_launch( $vsc ) {
 		$cmd = "cd /D \"" . $vsc . "\\.vscode\"&start ds.code-workspace&";
 	} else{
 		// Macintosh
-		$cmd = "open \"" . $cmd . "\"";
+		$cmd = "open \"" . $vsc . "/.vscode/ds.code-workspace\"";
 	}
 	exec( $cmd );
 }
