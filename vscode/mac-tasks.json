@@ -4,7 +4,7 @@
         {
             "label": "Open browser",
             "type": "shell",
-            "command": "open http://{{siteName}}?XDEBUG_SESSION_START",
+            "command": "open http://{{siteName}}/.vscode/xdebug.html",
             "windows": {
                 "command": "cmd /C \"start http://{{siteName}}/.vscode/xdebug.html\""
             },
