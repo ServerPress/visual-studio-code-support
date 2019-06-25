@@ -28,7 +28,7 @@ function create_vsc_workspace($cwd) {
     $file = $cwd . DIRECTORY_SEPARATOR . ".vscode" . DIRECTORY_SEPARATOR . "launch.json";
     if (file_exists($file) === TRUE){
         $launch = file_get_contents($file);
-        $launch = json_encode(array_merge(json_decode($launch, true),json_decode($temp, true)));
+        $launch = json_encode(array_merge(json_decode($launch, true),json_decode($temp, true)), JSON_PRETTY_PRINT);
     }else{
         $launch = $temp;
     }
@@ -47,10 +47,11 @@ function create_vsc_workspace($cwd) {
     $file = $cwd . DIRECTORY_SEPARATOR . ".vscode" . DIRECTORY_SEPARATOR . "ds.code-workspace";
     if (file_exists($file) === TRUE){
         $work = file_get_contents($file);
-        $work = json_encode(array_merge(json_decode($work, true),json_decode($temp, true)));
+        $work = json_encode(array_merge(json_decode($work, true),json_decode($temp, true)), JSON_PRETTY_PRINT);
     }else{
         $work = $temp;
     }
+    
     // Update {{sitePath}} in ds.code-workspace
     $x = str_replace("\\", "\\\\", $cwd);
     $work = str_replace("{{sitePath}}", $x, $work);
@@ -62,7 +63,7 @@ function create_vsc_workspace($cwd) {
     $file = $cwd . DIRECTORY_SEPARATOR . ".vscode" . DIRECTORY_SEPARATOR . "tasks.json";
     if (file_exists($file) === TRUE){
         $tasks = file_get_contents($file);
-        $tasks = json_encode(array_merge(json_decode($tasks, true),json_decode($temp, true)));
+        $tasks = json_encode(array_merge(json_decode($tasks, true),json_decode($temp, true)), JSON_PRETTY_PRINT);
     }else{
         $tasks = $temp;
     }
