@@ -12,7 +12,9 @@ if ( ! empty( $_REQUEST['domain'] ) ) {
  */
 function vsc_launch( $vsc ) {
 
-	// TODO: check if workspace exists, if not, create it
+	// Create .vscode folder if it does not already exists
+	include_once( __DIR__ . DIRECTORY_SEPARATOR . "vsc-support.php");
+	create_vsc_workspace($vsc);
 
 	global $ds_runtime;
 	if ( PHP_OS !== 'Darwin' ){
