@@ -6,17 +6,18 @@
 	],
 	"settings": {
 		"terminal.integrated.env.windows": {
-			"DS_PLATFORM": "Windows",
-			"DS_CLI": "c:\\xampplite\\ds-plugins\\ds-cli",
-			"PHPRC":"c:\\xampplite\\ds-plugins\\ds-cli\\platform\\win32\\pre",
-			"npm_config_cache":"c:\\xampplite\\ds-plugins\\ds-cli\\platform\\win32\\npm-cache",
-			"npm_config_prefix":"c:\\xampplite\\ds-plugins\\ds-cli\\platform\\win32\\npm",
-			"COMPOSER_HOME":"c:\\xampplite\\ds-plugins\\ds-cli\\platform\\win32\\composer",
-			"CYGWIN_HOME":"c:\\xampplite\\ds-plugins\\ds-cli\\platform\\win32\\cygwin",
-			"HOME":"${env:USERPROFILE}",
-			"PATH":"c:\\xampplite\\ds-plugins\\ds-cli\\platform\\all\\pre;c:\\xampplite\\ds-plugins\\ds-cli\\platform\\win32\\pre;c:\\xampplite\\ds-plugins\\ds-cli\\platform\\win32\\cygwin\\bin;c:\\xampplite\\ds-plugins\\ds-cli\\platform\\win32\\nodejs;c:\\xampplite\\ds-plugins\\ds-cli\\platform\\win32\\npm;c:\\xampplite\\php;c:\\xampplite\\mysql\\bin;c:\\xampplite\\perl\\bin;c:\\xampplite\\apache\\bin;c:\\xampplite\\other;c:\\xampplite\\ds-plugins\\ds-cli\\platform\\all\\wp-cli\\bin;${env:PATH}"
+			"DS_PLATFORM": "Darwin",
+			"DS_CLI": "/Applications/XAMPP/ds-plugins/ds-cli",
+			"PHPRC":"/Applications/XAMPP/ds-plugins/ds-cli/platform/mac/pre",
+			"SSL_CERT_FILE": "/Applications/XAMPP/ds-plugins/ds-cli/platform/mac/homebrew/etc/openssl/cert.pem",
+			"GIT_EXEC_PATH": "/Applications/XAMPP/ds-plugins/ds-cli/platform/mac/homebrew/Cellar/git/2.19.0_1/libexec/git-core",
+			"GIT_TEMPLATE_DIR": "/Applications/XAMPP/ds-plugins/ds-cli/platform/mac/homebrew/Cellar/git/2.19.0_1/share/git-core/templates",
+			"npm_config_cache": "/Applications/XAMPP/ds-plugins/ds-cli",
+			"npm_config_prefix":"/Applications/XAMPP/ds-plugins/ds-cli",
+			"COMPOSER_HOME":"/Applications/XAMPP/ds-plugins/ds-cli",
+			"DYLD_FALLBACK_LIBRARY_PATH": "/Applications/XAMPP/ds-plugins/ds-cli",
+			"PATH":"/Applications/XAMPP/ds-plugins/ds-cli/platform/all/pre:/Applications/XAMPP/ds-plugins/ds-cli/platform/mac/pre:/Applications/XAMPP/ds-plugins/ds-cli/vendor/bin:/Applications/XAMPP/ds-plugins/ds-cli/platform/mac/homebrew/bin:/Applications/XAMPP/ds-plugins/ds-cli/platform/mac/nodejs/bin:/Applications/XAMPP/ds-plugins/ds-cli/platform/mac/npm/bin:/Applications/XAMPP/xamppfiles/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$PATH"
 		},
-		"terminal.integrated.shell.windows": "c:\\xampplite\\ds-plugins\\ds-cli\\platform\\win32\\cygwin\\bin\\bash.exe",
+		"terminal.integrated.shell.windows": "/bin/bash",
 		"terminal.integrated.rightClickBehavior": "default"
 	}
-}
