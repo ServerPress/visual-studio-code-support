@@ -12,9 +12,10 @@ if ( $ds_runtime->last_ui_event !== false ) {
 		}
 		if ( isset( $ds_runtime->preferences->sites->{$siteName} ) ) {
 			$sitePath = $ds_runtime->preferences->sites->{$siteName}->sitePath;
-
-			// TODO: invoke create_vsc_workspace in vsc-support.php
-
+		
+			// Create .vscode folder if it does not already exists
+			include_once( __DIR__ . DIRECTORY_SEPARATOR . "vsc-support.php");
+			create_vsc_workspace($sitePath);
 		}
 	}
 }
