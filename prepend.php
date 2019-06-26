@@ -25,7 +25,6 @@ if ( $ds_runtime->last_ui_event !== false ) {
 			create_vsc_workspace($sitePath);
 		}
 	}
-	mytrace($ds_runtime->last_ui_event);
 }
 if (!isset($_SERVER['HTTP_USER_AGENT'])) return;
 
