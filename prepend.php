@@ -29,7 +29,7 @@ if ( $ds_runtime->last_ui_event !== false ) {
 if (!isset($_SERVER['HTTP_USER_AGENT'])) return;
 
 // Add open in visual studio icon to localhost to open/start ds.code-workspace file
-$ds_runtime->add_action( 'domain_button_group', 'vsc_domain_button_group', 50 );
+$ds_runtime->add_action( 'domain_button_group_after', 'vsc_domain_button_group', 50 );
 function vsc_domain_button_group( $domain ){
 	echo '<a href="http://localhost/ds-plugins/visual-studio-code-support/vsc-launch.php" data-domain="', $domain, '" style="background-color: #575297;border-color:#575297" class="btn btn-info dds-action vsc">VS Code</a>';
 }
