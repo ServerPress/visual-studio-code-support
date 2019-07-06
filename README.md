@@ -24,3 +24,8 @@ Code -> Preferences -> Extensions
 
 On Windows
 File -> Preferences -> Extensions
+
+# Guide
+For more complete instructions, visit the wiki at:
+
+https://github.com/ServerPress/visual-studio-code-support/wiki
